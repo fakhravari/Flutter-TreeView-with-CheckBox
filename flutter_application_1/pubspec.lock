@@ -79,10 +79,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_tree_pro
-      sha256: d914bf035a07bcfb8952ea8fea62fedc9304c5ad6561e5cca8f126f5eed0219c
+      sha256: "9539e959ae0e8128abcfd1f77109a9757ac77c3ce938b23a971a3fe37b32622d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.9"
+    version: "0.0.11"
   leak_tracker:
     dependency: transitive
     description:
@@ -119,10 +119,10 @@ packages:
     dependency: transitive
     description:
       name: logger
-      sha256: af05cc8714f356fd1f3888fb6741cbe9fbe25cdb6eedbab80e1a6db21047d4a4
+      sha256: "697d067c60c20999686a0add96cf6aba723b3aa1f83ecf806a8097231529ec32"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.0"
+    version: "2.4.0"
   matcher:
     dependency: transitive
     description:
