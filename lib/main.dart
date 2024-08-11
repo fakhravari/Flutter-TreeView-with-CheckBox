@@ -3,6 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_tree_pro/flutter_tree_pro.dart';
+import 'package:logger/logger.dart';
+
+var logger = Logger(
+  printer: PrettyPrinter(),
+);
 
 void main() {
   runApp(MyApp());
@@ -57,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   bool isRTL = false;
   bool isExpanded = false;
+  bool isSingleSelect = false;
 
   @override
   Widget build(BuildContext context) {
@@ -132,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: FlutterTreePro(
                       isRTL: isRTL,
                       isExpanded: isExpanded,
+                      isSingleSelect: isSingleSelect,
                       listData: treeListData,
                       initialListData: initialTreeData,
                       config: const Config(
@@ -140,7 +147,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           label: 'value'),
                       onChecked: (List<Map<String, dynamic>> checkedList) {
                         // logger.t(checkedList);
-                        // initialTreeData = checkedList;
+                        initialTreeData = checkedList;
+
+                        print(initialTreeData);
                       },
                     ),
                   ),
